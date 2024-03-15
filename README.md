@@ -7,9 +7,30 @@ first BeCode solo networking project
 
 Before everything here are a few things we need to know for this exercise:
 
-- How to edit IP addresses and default gateways of ports on our hosts and routers
+- How do we edit IP addresses and default gateways of ports on our hosts and routers?
+  - to assign an IP address to one of the hosts click on them.
+  - Then in the up written in blue choose config.
+  - Then on the left click on the port that you want to assign an IP address to.
+  - enter the IP address.
+  - Do it until all the used ports have an assigned IP address to connect to your network.
   
-- How to configure our routers
+- How do we set the default gateway?
+  - After assigning a value to the port connected to the cable from the router to the switch, copy it.
+  - Then close the tab and click on your hosts.
+  - chose config in the menu on the top center.
+  - in there you will see a space that says default gateway.
+  - In there paste the IP from the router you copied earlier
+  - do it for all the hosts in that network.
+  - Voilà!
+    
+- How do we configure our routers?
+  - We click on the routers, then select CLI from the menu up in the center.
+  - Press enter
+  - Type config t then press enter
+  - Then enter int (name of port)
+  - To assign a value to a port we enter ip add (IP) (subnet mask) 
+  - Then type no shut
+  - Now our routers should be mostly set up, we still need to route them to one another but we will see that later.
 
 How is network 192.168.1.0 connected?
 
